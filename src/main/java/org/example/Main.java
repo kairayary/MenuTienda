@@ -3,7 +3,17 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("PRUEBA");
+        public class Main {
+            public static void main(String[] args) {
+
+                MenuServicios servicios = new MenuServicios();
+
+                try {
+                    servicios.Menu();
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
+            }
 
     }
 }
