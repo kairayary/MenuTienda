@@ -39,7 +39,7 @@ public class DAO {
         }
     }
 
-    protected void ConsultarBD(String sql) throws Exception {
+    protected void QueryBD(String sql) throws Exception {
         try {
             ConectarBD();
             statement = connection.createStatement();

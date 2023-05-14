@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FabricanteDao extends DAO{
-    public List<Fabricante> ObtenerFabricante() throws Exception{
+    public List<Fabricante> TenerFabricante() throws Exception{
         try{
             String sql = "Select * from fabricante;";
 
-            ConsultarBD(sql);
+            QueryBD(sql);
 
             List<Fabricante>fabricantes = new ArrayList<>();
             Fabricante fabricante;
@@ -22,7 +22,7 @@ public class FabricanteDao extends DAO{
                 fabricantes.add(fabricante);
 
             }
-            return fabricante;
+            return fabricantes;
         }catch (Exception e){
             System.out.println(e.getMessage());
 

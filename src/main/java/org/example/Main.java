@@ -1,12 +1,14 @@
 package org.example;
 
+import Servicios.MenuServicio;
+
 public class Main {
     public static void main(String[] args) {
 
-        public class Main {
-            public static void main(String[] args) {
 
-                MenuServicios servicios = new MenuServicios();
+
+
+                MenuServicio servicios = new MenuServicio();
 
                 try {
                     servicios.Menu();
@@ -15,5 +17,5 @@ public class Main {
                 }
             }
 
-    }
-}
+        }
+

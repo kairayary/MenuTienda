@@ -30,7 +30,7 @@ public class ProductoDAO extends DAO{
                 fabricante.setCodigo(resultset.getInt(1));
                 fabricante.setNombre(resultset.getString(2));
 
-                producto.setFabricante(fabricante);
+
 
                 productos.add(producto);
             }

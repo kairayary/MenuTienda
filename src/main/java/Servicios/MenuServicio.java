@@ -1,5 +1,7 @@
 package Servicios;
 
+import java.util.Scanner;
+
 public class MenuServicio {
 
     ProductoServicio productoServicios = new ProductoServicio();
@@ -53,7 +55,7 @@ public class MenuServicio {
                     Menu();
                     break;
                 case "f":
-                    fabricanteServicios.mostrarFabricantes();
+                    fabricanteServicios.verFabricantes();
                     Menu();
                     break;
                 case "g":
@@ -61,7 +63,7 @@ public class MenuServicio {
                     break;
                 default:
 
-                    System.out.println("Ingrese una opcion valida");
+                    System.out.println("Ingrese una opción válida");
                     Menu();
             }
         } catch (Exception e) {
@@ -71,4 +73,4 @@ public class MenuServicio {
     }
 
 }
-}
+

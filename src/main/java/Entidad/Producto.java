@@ -7,14 +7,16 @@ public class Producto {
     private double precio;
     private int codigo_fabricante;
 
-    public Producto() {
-    }
+    private Fabricante fabricante;
 
-    public Producto(int codigo, String nombre, double precio, int codigo_fabricante) {
+    public Producto(int codigo, String nombre, double precio, Fabricante fabricante) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
-        this.codigo_fabricante = codigo_fabricante;
+        this.fabricante = fabricante;
+    }
+
+    public Producto() {
     }
 
     public int getCodigo() {
@@ -41,21 +43,18 @@ public class Producto {
         this.precio = precio;
     }
 
-    public int getCodigo_fabricante() {
-        return codigo_fabricante;
+    public Fabricante getFabricante() {
+        return fabricante;
     }
 
-    public void setCodigo_fabricante(int codigo_fabricante) {
-        this.codigo_fabricante = codigo_fabricante;
+    public void setFabricante(Fabricante fabricante) {
+        this.fabricante = fabricante;
     }
+
 
     @Override
     public String toString() {
-        return "Producto{" +
-                "codigo=" + codigo +
-                ", nombre='" + nombre + '\'' +
-                ", precio=" + precio +
-                ", codigo_fabricante=" + codigo_fabricante +
-                '}';
+        return String.format("Tienda (id: %s, nombre: %s, apellido: %s, precio: %s)",
+                codigo, nombre, precio, fabricante);
     }
 }

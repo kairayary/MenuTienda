@@ -1,5 +1,10 @@
 package Servicios;
 
+import Entidad.Producto;
+import Persistencia.ProductoDAO;
+
+import java.util.List;
+
 public class ProductoServicio {
 
     private ProductoDAO productoDAO = new ProductoDAO();
@@ -51,7 +56,7 @@ public class ProductoServicio {
 
     public void MostrarProductoPrecio120y202() throws Exception {
         try {
-            List<Producto> productos = productoDAO.ObtenerProductosPreciosEntre120y202();
+            List<Producto> productos = productoDAO.ObtenerProductosdePreciosEntre120y202();
 
             if (productos.isEmpty()) {
                 throw new Exception("La lista no tiene productos");
